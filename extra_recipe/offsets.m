@@ -108,7 +108,7 @@ init_offsets(void)
         }
         if ([version compare:@"10.1" options:NSNumericSearch] == NSOrderedAscending) {
             // 10.0[.x]
-            mp = "@executable_path/mach-portal";
+            mp = "@executable_path/mach-portal.dylib";
             AGXCommandQueue_vtable = 0xfffffff006f83b78;
             OSData_getMetaClass = 0xfffffff007479938;
             OSSerializer_serialize = 0xfffffff007490240;
@@ -116,7 +116,7 @@ init_offsets(void)
             call5 = 0xfffffff00633fe10;
         } else {
             // 10.1[.x]
-            mp = "@executable_path/mach_portal";
+            mp = "@executable_path/mach_portal.dylib";
             AGXCommandQueue_vtable = 0xfffffff006f83d38;
             OSData_getMetaClass = 0xfffffff00747ad9c;
             OSSerializer_serialize = 0xfffffff0074916b4;
